@@ -1,1 +1,0 @@
-hyprland alacritty waybar ttf-cousine-nerd python-pywal16-git pavucontrol pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-hyprland dunst hyprpolkitagent fish fastfetch eza
