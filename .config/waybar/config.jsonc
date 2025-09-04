@@ -15,7 +15,7 @@
     "format": "{ifname}",
     "format-wifi": "󰖩",
     "format-disconnected": "󱚵",
-    "on-click": "alacritty -e impala",
+    "on-click": "alacritty -e nmtui",
   },
 
   "tray": {
