@@ -19,8 +19,6 @@
 #pulseaudio,
 #battery,
 #clock {
-    color: @foreground;
-    background-color: @background;
     margin: 0 10 0 10px;
 }
 
@@ -49,17 +47,22 @@
 
 #workspaces button {
     color: @foreground;
-    padding: 5px;
+    padding: 0 10 0 10px;
+
+    box-shadow: none;
+    text-shadow: none;
+
+    border: none;
 
     transition: all 0.2s ease;
 }
 
 #workspaces button.active {
-    color: @color1;
+    color: @color9;
 }
 
 #workspaces button:hover {
-    color: @color1;
+    color: @color9;
     background: transparent;
 
     box-shadow: none;
