@@ -1,0 +1,81 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/archlogo",
+    "color": {
+      "1": "white",
+    },
+  },
+  "display": {
+    "separator": " - ",
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "┌────────────────────[ Software ]────────────────────┐",
+    },
+    {
+      "type": "os",
+      "keyColor": "white",
+    },
+    {
+      "type": "kernel",
+      "keyColor": "white",
+    },
+    {
+      "type": "packages",
+      "keyColor": "white",
+    },
+    {
+      "type": "custom",
+      "format": "└────────────────────────────────────────────────────┘",
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "┌────────────────────[ Hardware ]────────────────────┐",
+    },
+    {
+      "type": "cpu",
+      "keyColor": "white",
+    },
+    {
+      "type": "gpu",
+      "keyColor": "white",
+    },
+    {
+      "type": "memory",
+      "keyColor": "white",
+    },
+    {
+      "type": "swap",
+      "keyColor": "white",
+    },
+    {
+      "type": "battery",
+      "keyColor": "white",
+    },
+    {
+      "type": "disk",
+      "keyColor": "white",
+    },
+    {
+      "type": "custom",
+      "format": "└────────────────────────────────────────────────────┘",
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "┌──────────────────────[ Misc ]──────────────────────┐",
+    },
+    {
+      "type": "uptime",
+      "keyColor": "white",
+    },
+    {
+      "type": "custom",
+      "format": "└────────────────────────────────────────────────────┘",
+    },
+  ],
+}
