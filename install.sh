@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if ! which pacman >/dev/null; then
-  echo "Your not on an Arch or an Arch based distro, you can not use these dotfiles."
-  exit 1
+    echo "Your not on an Arch or an Arch based distro, you can not use these dotfiles."
+    exit 1
 fi
 
 if ! pacman -Q base-devel >/dev/null; then
@@ -21,7 +21,7 @@ if ! which paru >/dev/null; then
     cd /tmp/paru
     makepkg -si
     echo "Paru installed."
-  fi
+fi
 
 paru -S hyprland alacritty waybar ttf-cousine-nerd python-pywal16-git pavucontrol pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-hyprland dunst hyprpolkitagent fish fastfetch eza --needed --noconfirm
 
