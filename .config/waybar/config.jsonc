@@ -1,0 +1,73 @@
+{
+  "position": "top",
+  "height": 34,
+  "margin": "5 5 5 5",
+
+  "modules-left": ["hyprland/window"],
+
+  "modules-center": ["hyprland/workspaces"],
+
+  "modules-right": ["tray", "pulseaudio", "battery", "clock"],
+
+  "hyprland/window": {
+    "max-length": 15,
+    "format": "󰍹 {title}",
+  },
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+  },
+
+  "tray": {
+    "icon-size": 20,
+  },
+
+  "pulseaudio": {
+    "on-click": "pavucontrol",
+    "format": " {volume}",
+  },
+
+  "battery": {
+    "bat": "BAT1",
+    "interval": 10,
+    "tooltip": true,
+
+    "states": {
+      "good": 100,
+      "warning": 50,
+      "bad": 15,
+      "critical": 5,
+    },
+
+    "tooltip-format": "{timeTo}",
+    "format-good": "󱊣 {capacity}%",
+    "format-warning": "󱊢 {capacity}%",
+    "format-bad": "󱊡 {capacity}%",
+    "format-critical": "󰂎 {capacity}%",
+  },
+
+  "clock": {
+    "interval": 1,
+    "tooltip": true,
+    "format": " {:%I:%M %p}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#99c1de'><b>{}</b></span>",
+        "days": "<span color='#e3d5ca'><b>{}</b></span>",
+        "weeks": "<span color='#cb997e'><b>W{}</b></span>",
+        "weekdays": "<span color='#cb997e'><b>{}</b></span>",
+        "today": "<span color='#3683e1'><b><u>{}</u></b></span>",
+      },
+      "actions": {
+        "on-click-right": "mode",
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down",
+      },
+    },
+  },
+}

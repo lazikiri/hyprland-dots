@@ -1,0 +1,56 @@
+@import "colors.css";
+
+* {
+    font-family: Cousine Nerd Font;
+    font-size: 15px;
+}
+
+#waybar {
+    color: @text;
+    background-color: @darkgray;
+    border-radius: 8px;
+}
+
+#workspaces {
+    color: @text;
+    background-color: @darkgray;
+    margin: 0 5 0 5px;
+}
+
+#workspaces button {
+    color: @text;
+}
+
+#workspaces button.active {
+    color: @color3;
+}
+
+#workspaces button:hover {
+    color: @text;
+    background: @color3;
+
+    box-shadow: none;
+    text-shadow: none;
+
+    border-top: 1px solid @color3;
+    border-right: 1px solid @color3;
+    border-left: 1px solid @color3;
+    border-bottom: 1px solid @color3;
+}
+
+#window,
+#tray,
+#pulseaudio,
+#battery,
+#clock {
+    color: @text;
+    margin: 0 10 0 10px;
+}
+
+#window {
+    margin: 0 10 0 20;
+}
+
+#clock {
+    margin: 0 20 0 10;
+}
