@@ -19,6 +19,11 @@
 
 #workspaces button {
     color: @foreground;
+    padding: 5px 5px;
+    transition:
+        color 0.2s ease,
+        text-shadow 0.2s ease,
+        transform 0.2s ease;
 }
 
 #workspaces button.active {
@@ -26,16 +31,13 @@
 }
 
 #workspaces button:hover {
-    color: @foreground;
-    background: @color1;
+    color: @color1;
+    background: transparent;
 
     box-shadow: none;
     text-shadow: none;
 
-    border-top: 1px solid @color1;
-    border-right: 1px solid @color1;
-    border-left: 1px solid @color1;
-    border-bottom: 1px solid @color1;
+    border: none;
 }
 
 #window,
