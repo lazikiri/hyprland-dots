@@ -10,7 +10,7 @@
   "modules-right": ["tray", "pulseaudio", "battery", "clock"],
 
   "hyprland/window": {
-    "max-length": 15,
+    "max-length": 30,
     "format": "󰍹 {title}",
   },
 
