@@ -1,4 +1,4 @@
-@import "../../.cache/wal/colors-waybar.css";
+@import url("../../.cache/wal/colors-waybar.css");
 
 * {
     font-family: FiraCode Nerd Font;
@@ -7,23 +7,51 @@
 
 #waybar {
     color: @foreground;
-    background-color: @background;
+    background-color: transparent;
     border-radius: 8px;
 }
+
+/*-----MODULES-----*/
+
+#network,
+#custom-sep,
+#tray,
+#pulseaudio,
+#battery,
+#clock {
+    color: @foreground;
+    background-color: @background;
+    margin: 0 10 0 10px;
+}
+
+.modules-left {
+    color: @foreground;
+    background-color: @background;
+    border-radius: 13px;
+    padding: 0 10 0 10px;
+}
+
+.modules-right {
+    color: @foreground;
+    background-color: @background;
+    border-radius: 13px;
+    padding: 0 10 0 10px;
+}
+
+/*-----WORKSPACES-----*/
 
 #workspaces {
     color: @foreground;
     background-color: @background;
+    border-radius: 13px;
+    padding: 0 10 0 10px;
 }
 
 #workspaces button {
     color: @foreground;
     padding: 5px;
 
-    transition:
-        color 0.2s ease,
-        text-shadow 0.2s ease,
-        transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 #workspaces button.active {
@@ -38,22 +66,6 @@
     text-shadow: none;
 
     border: none;
-}
 
-#network,
-#tray,
-#pulseaudio,
-#battery,
-#clock {
-    color: @foreground;
-    background-color: @background;
-    margin: 0 10 0 10px;
-}
-
-#network {
-    margin: 0 10 0 20px;
-}
-
-#clock {
-    margin: 0 20 0 10;
+    transition: all 0.2s ease;
 }
