@@ -19,7 +19,7 @@
   },
 
   "pulseaudio": {
-    "on-click": "pavucontrol",
+    "on-click": "wiremix",
     "format": " {volume}",
   },
 
