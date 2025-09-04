@@ -1,14 +1,26 @@
 {
+  // -----SETTINGS-----
+
   "position": "top",
   "height": 34,
   "margin": "5 5 5 5",
   "reload_style_on_change": true,
 
-  "modules-left": ["network", "tray"],
+  // -----LAYOUT-----
+
+  "modules-left": ["network", "custom/sep", "tray"],
 
   "modules-center": ["hyprland/workspaces"],
 
-  "modules-right": ["pulseaudio", "battery", "clock"],
+  "modules-right": [
+    "pulseaudio",
+    "custom/sep",
+    "battery",
+    "custom/sep",
+    "clock",
+  ],
+
+  // -----MODULES-----
 
   "network": {
     "interval": 1,
@@ -18,12 +30,17 @@
     "on-click": "alacritty -e nmtui",
   },
 
+  "custom/sep": {
+    "format": "|",
+    "interval": 0,
+    "tooltip": false,
+  },
+
   "tray": {
     "icon-size": 20,
   },
 
   "hyprland/workspaces": {
-    "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
       "default": "",
