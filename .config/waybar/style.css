@@ -14,12 +14,12 @@
 #workspaces {
     color: @foreground;
     background-color: @background;
-    margin: 0 5 0 5px;
 }
 
 #workspaces button {
     color: @foreground;
-    padding: 5px 5px;
+    padding: 5px;
+
     transition:
         color 0.2s ease,
         text-shadow 0.2s ease,
@@ -40,16 +40,18 @@
     border: none;
 }
 
+#network,
 #tray,
 #pulseaudio,
 #battery,
 #clock {
     color: @foreground;
+    background-color: @background;
     margin: 0 10 0 10px;
 }
 
-#window {
-    margin: 0 10 0 20;
+#network {
+    margin: 0 10 0 20px;
 }
 
 #clock {
