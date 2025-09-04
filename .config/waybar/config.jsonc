@@ -19,7 +19,7 @@
   },
 
   "pulseaudio": {
-    "on-click": "wiremix",
+    "on-click": "alacritty -e wiremix",
     "format": " {volume}",
   },
 
