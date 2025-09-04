@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "../../.cache/wal/colors-waybar.css";
 
 * {
     font-family: Cousine Nerd Font;
@@ -6,36 +6,36 @@
 }
 
 #waybar {
-    color: @text;
-    background-color: @darkgray;
+    color: @foreground;
+    background-color: @background;
     border-radius: 8px;
 }
 
 #workspaces {
-    color: @text;
-    background-color: @darkgray;
+    color: @foreground;
+    background-color: @background;
     margin: 0 5 0 5px;
 }
 
 #workspaces button {
-    color: @text;
+    color: @foreground;
 }
 
 #workspaces button.active {
-    color: @color3;
+    color: @color1;
 }
 
 #workspaces button:hover {
-    color: @text;
-    background: @color3;
+    color: @foreground;
+    background: @color1;
 
     box-shadow: none;
     text-shadow: none;
 
-    border-top: 1px solid @color3;
-    border-right: 1px solid @color3;
-    border-left: 1px solid @color3;
-    border-bottom: 1px solid @color3;
+    border-top: 1px solid @color1;
+    border-right: 1px solid @color1;
+    border-left: 1px solid @color1;
+    border-bottom: 1px solid @color1;
 }
 
 #window,
@@ -43,7 +43,7 @@
 #pulseaudio,
 #battery,
 #clock {
-    color: @text;
+    color: @foreground;
     margin: 0 10 0 10px;
 }
 
