@@ -1,17 +1,19 @@
 #!/bin/bash
 
+git clone https://codeberg.org/reverend/hyprland-dots /tmp/hyprland-dots
+
 if ! which pacman >/dev/null; then
     echo "Your not on an Arch or an Arch based distro, you can not use these dotfiles."
     exit 1
 fi
 
 if ! pacman -Q base-devel >/dev/null; then
-    pacman -S base-devel
+    sudo pacman -S base-devel
     echo "Installed base-devel."
 fi
 
 if ! git >/dev/null; then
-    pacman -S git
+    sudo pacman -S git
     echo "Installed Git."
 fi
 
@@ -23,9 +25,8 @@ if ! which paru >/dev/null; then
     echo "Paru installed."
 fi
 
-paru -S hyprland alacritty waybar ttf-cousine-nerd python-pywal16-git pavucontrol pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-hyprland dunst hyprpolkitagent fish fastfetch eza --needed --noconfirm
+paru -S hyprland alacritty waybar ttf-cousine-nerd python-pywal16-git pavucontrol pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-hyprland dunst hyprpolkitagent fish fastfetch eza rofi-wayland swww --needed --noconfirm
 
-git clone https://codeberg.org/reverend/hyprland-dots /tmp/hyprland-dots
 mv /tmp/hyprland-dots/.config/* "$HOME/.config/"
 
 chsh -s /usr/bin/fish
