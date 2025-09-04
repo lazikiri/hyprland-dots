@@ -25,7 +25,7 @@ if ! which paru >/dev/null; then
     echo "Paru installed."
 fi
 
-paru -S hyprland alacritty waybar ttf-cousine-nerd python-pywal16-git pavucontrol pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent fish fastfetch eza rofi-wayland swww xdg-desktop-portal-hyprland hyprshot hyprpicker cliphist wl-clipboard --needed --noconfirm
+paru -S --needed --noconfirm hyprland alacritty waybar ttf-cousine-nerd python-pywal16-git pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent fish fastfetch eza rofi-wayland swww xdg-desktop-portal-hyprland hyprshot hyprpicker cliphist wl-clipboard wiremix
 
 mv /tmp/hyprland-dots/.config/* "$HOME/.config/"
 
