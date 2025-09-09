@@ -7,7 +7,7 @@
 
 #waybar {
     color: @foreground;
-    background-color: @background;
+    background-color: transparent;
     border-radius: 8px;
 }
 
@@ -25,13 +25,15 @@
 .modules-left {
     color: @foreground;
     background-color: @background;
-    border-radius: 8px;
+    border-radius: 13px;
+    padding: 0 10 0 10px;
 }
 
 .modules-right {
     color: @foreground;
     background-color: @background;
-    border-radius: 8px;
+    border-radius: 13px;
+    padding: 0 10 0 10px;
 }
 
 /*-----WORKSPACES-----*/
@@ -39,6 +41,8 @@
 #workspaces {
     color: @foreground;
     background-color: @background;
+    border-radius: 13px;
+    padding: 0 10 0 10px;
 }
 
 #workspaces button {
