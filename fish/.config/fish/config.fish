@@ -1,3 +1,5 @@
+alias cd='z'
+alias cdi='zi'
 alias ls='eza -al --color=always --group-directories-first --icons'
 alias lt='eza -aT --color=always --group-directories-first --icons'
 alias cat='bat --style=full'

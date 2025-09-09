@@ -27,7 +27,7 @@ if ! which paru >/dev/null; then
     makepkg -si
 fi
 
-paru -S --needed --noconfirm hyprland alacritty waybar ttf-firacode-nerd python-pywal16-git pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent fastfetch eza rofi swww xdg-desktop-portal xdg-desktop-portal-hyprland hyprshot hyprpicker cliphist wl-clipboard wiremix yazi hyprlock fzf bat mpv stow
+paru -S --needed --noconfirm hyprland alacritty waybar ttf-firacode-nerd python-pywal16-git pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent fastfetch eza rofi swww xdg-desktop-portal xdg-desktop-portal-hyprland hyprshot hyprpicker cliphist wl-clipboard wiremix yazi hyprlock fzf bat mpv stow zoxide
 
 cd "$HOME/.dotfiles"
 stow */
