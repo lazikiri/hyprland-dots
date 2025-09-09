@@ -1,6 +1,9 @@
 #!/bin/bash
 
-git clone https://codeberg.org/reverend/hyprland-dots /tmp/hyprland-dots
+if [ "$(whoami)" = "root" ]; then
+    echo "Do not run as root"
+    exit 1
+fi
 
 if ! which pacman >/dev/null; then
     echo "Your not on an Arch or an Arch based distro, you can not use these dotfiles."
@@ -9,29 +12,24 @@ fi
 
 if ! pacman -Q base-devel >/dev/null; then
     sudo pacman -S base-devel
-    echo "Installed base-devel."
 fi
 
 if ! git >/dev/null; then
     sudo pacman -S git
-    echo "Installed Git."
 fi
+
+git clone https://github.com/lazikiri/hyprland-dots "$HOME/.dotfiles"
 
 if ! which paru >/dev/null; then
     rm -rf /tmp/paru
     git clone https://aur.archlinux.org/paru.git /tmp/paru
     cd /tmp/paru
     makepkg -si
-    echo "Paru installed."
 fi
 
-paru -S --needed --noconfirm hyprland alacritty waybar ttf-firacode-nerd python-pywal16-git pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent fish fastfetch eza rofi swww xdg-desktop-portal xdg-desktop-portal-hyprland hyprshot hyprpicker cliphist wl-clipboard wiremix yazi hyprlock fzf bat mpv stow
+paru -S --needed --noconfirm hyprland alacritty waybar ttf-firacode-nerd python-pywal16-git pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent fastfetch eza rofi swww xdg-desktop-portal xdg-desktop-portal-hyprland hyprshot hyprpicker cliphist wl-clipboard wiremix yazi hyprlock fzf bat mpv stow
 
-mkdir "$HOME/.dotfiles"
-mv /tmp/hyprland-dots/* "$HOME/.dotfiles"
 cd "$HOME/.dotfiles"
 stow */
-
-chsh -s /usr/bin/fish
 
 echo "Please reboot your system."
