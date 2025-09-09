@@ -6,3 +6,5 @@ alias lsblk='lsblk | bat --style=plain -l conf'
 alias fzf='fzf --style full --color 16 --layout=reverse --preview="bat -p --color=always {}"'
 alias neofetch='fastfetch'
 alias grubupdate='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+
+zoxide init fish | source

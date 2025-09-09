@@ -1,4 +1,4 @@
-function installpkg
+function uninstallpkg
     if type -q paru
         paru -Qq | fzf --multi --preview "paru -Si {1}" | xargs -ro paru -Rns
     end
