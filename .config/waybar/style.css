@@ -1,7 +1,7 @@
 @import url("../../.cache/wal/colors-waybar.css");
 
 * {
-    font-family: FiraCode Nerd Font;
+    font-family: "JetbrainsMono Nerd Font Propo";
     font-size: 15px;
 }
 
@@ -14,12 +14,19 @@
 /*-----MODULES-----*/
 
 #network,
-#custom-sep,
 #tray,
 #pulseaudio,
 #battery,
 #clock {
-    margin: 0 10 0 10px;
+    margin: 0 15 0 15px;
+}
+
+#clock {
+    margin: 0 20 0 15px;
+}
+
+#network {
+    margin: 0 15 0 20px;
 }
 
 .modules-left {

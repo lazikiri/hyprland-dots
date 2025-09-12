@@ -8,15 +8,16 @@
 
   // -----LAYOUT-----
 
-  "modules-left": ["network", "custom/sep", "tray"],
+  "modules-left": [
+	  "network",
+	  "tray"
+  ],
 
   "modules-center": ["hyprland/workspaces"],
 
   "modules-right": [
     "pulseaudio",
-    "custom/sep",
     "battery",
-    "custom/sep",
     "clock",
   ],
 
@@ -28,12 +29,6 @@
     "format-wifi": "󰖩",
     "format-disconnected": "󱚵",
     "on-click": "alacritty -e nmtui",
-  },
-
-  "custom/sep": {
-    "format": "|",
-    "interval": 0,
-    "tooltip": false,
   },
 
   "tray": {
@@ -67,15 +62,15 @@
     "states": {
       "good": 100,
       "warning": 50,
-      "bad": 15,
+      "bad": 25,
       "critical": 5,
     },
 
     "tooltip-format": "{timeTo}",
-    "format-good": "󱊣 {capacity}%",
-    "format-warning": "󱊢 {capacity}%",
-    "format-bad": "󱊡 {capacity}%",
-    "format-critical": "󰂎 {capacity}%",
+    "format-good": " {capacity}%",
+    "format-warning": " {capacity}%",
+    "format-bad": " {capacity}%",
+    "format-critical": " {capacity}%",
   },
 
   "clock": {
