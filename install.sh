@@ -27,7 +27,6 @@ if ! which paru >/dev/null; then
   makepkg -si
 fi
 
-paru -S --needed --noconfirm hyprland waybar ttf-firacode-nerd python-pywal16-git pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent rofi swww xdg-desktop-portal xdg-desktop-portal-hyprland hyprshot cliphist wl-clipboard wiremix yazi hyprlock
-eza fastfetch fzf zoxide
+paru -S --needed --noconfirm hyprland waybar ttf-firacode-nerd python-pywal16-git pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent rofi swww xdg-desktop-portal xdg-desktop-portal-hyprland hyprshot cliphist wl-clipboard wiremix yazi hyprlock ttf-jetbrains-mono-nerd
 
 echo "Please reboot your system."
