@@ -1,4 +1,8 @@
-@import url("../../.cache/wal/colors-waybar.css");
+/* Pywal */
+/* @import url("../../.cache/wal/colors-waybar.css"); */
+
+/* Tokyo Night */
+@import url("colors.css");
 
 * {
     font-family: "FiraCode Nerd Font Propo";
@@ -21,12 +25,31 @@
     margin: 0 15 0 15px;
 }
 
-#clock {
-    margin: 0 20 0 15px;
-}
-
 #network {
     margin: 0 15 0 20px;
+    color: @color3;
+    border-bottom: 3px solid;
+}
+
+#tray {
+    color: @color4;
+    border-bottom: 3px solid;
+}
+
+#pulseaudio {
+    color: @color5;
+    border-bottom: 3px solid;
+}
+
+#battery {
+    color: @color6;
+    border-bottom: 3px solid;
+}
+
+#clock {
+    margin: 0 20 0 15px;
+    color: @color7;
+    border-bottom: 3px solid;
 }
 
 .modules-left {
@@ -61,11 +84,11 @@
 }
 
 #workspaces button.active {
-    color: @color9;
+    color: @color1;
 }
 
 #workspaces button:hover {
-    color: @color10;
+    color: @color1;
     background: transparent;
 
     box-shadow: none;
