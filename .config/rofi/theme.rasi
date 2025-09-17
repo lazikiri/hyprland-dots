@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+
+    bg: #24283b;
+    hv: #9274ca; 
+    primary: #C5C8C6; 
+    ug: #0B2447;
+    background-color: @bg;
+    kl: #7aa2f7;
+    black: #000000;
+
+    text-color: #ffffff;
+}
+
+window {
+    width: 450px;
+    height: 512px;
+    location: center;
+    blur: true;
+    border: 4px;
+    border-radius: 2px;
+    border-color: #1a1b26;
+}
+
+mainbox {
+    children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+    color: @kl;
+    children: [ "entry" ];
+}
+
+entry {
+    padding: 8px;
+}
+
+listview {
+    background-color: @bg;
+    lines: 10;
+}
+
+element {
+    color: @kl;
+    padding: 8px;
+}
+
+element selected {
+    color: @black;
+    background-color: @hv;
+}
