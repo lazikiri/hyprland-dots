@@ -1,17 +1,11 @@
+@import "~/.config/rofi/colors.rasi"
+
 * {
+    text-color: @text;
+    background-color: @background;
     margin: 0;
     padding: 0;
     spacing: 0;
-
-    bg: #24283b;
-    hv: #9274ca; 
-    primary: #C5C8C6; 
-    ug: #0B2447;
-    background-color: @bg;
-    kl: #7aa2f7;
-    black: #000000;
-
-    text-color: #ffffff;
 }
 
 window {
@@ -19,35 +13,46 @@ window {
     height: 512px;
     location: center;
     blur: true;
-    border: 4px;
-    border-radius: 2px;
-    border-color: #1a1b26;
+    border: 2px;
+    border-color: @border;
 }
 
 mainbox {
     children: [ "inputbar", "listview" ];
+    border: 4px;
+    border-color: #1a1b26;
 }
 
 inputbar {
-    color: @kl;
+    color: @background;
     children: [ "entry" ];
+    border: 2px;
+    border-color: @border;
 }
 
 entry {
     padding: 8px;
+
+    border: 0 0 2 0px;
+    border-color: @border;
 }
 
 listview {
-    background-color: @bg;
     lines: 10;
+
+    border: 2px;
+    border-color: @border;
 }
 
 element {
-    color: @kl;
+    color: @element;
     padding: 8px;
+
+    border: 0 0 2 0px;
+    border-color: @border;
 }
 
 element selected {
-    color: @black;
-    background-color: @hv;
+    color: @element-selected;
+    background-color: @element-selected;
 }
