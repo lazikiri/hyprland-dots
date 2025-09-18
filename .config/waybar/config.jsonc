@@ -49,7 +49,7 @@
   },
 
   "pulseaudio": {
-    "on-click": "alacritty -e wiremix",
+    "on-click": "kitty wiremix",
     "format": " {volume}",
   },
 
