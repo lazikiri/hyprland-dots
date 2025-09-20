@@ -1,7 +1,1 @@
-* {
-    text: #c0caf5;
-    background: #414868;
-    border: #1a1b26;
-    element: #9aa5ce;
-    element-selected: #bb9af7;
-}
+/home/user/.config/themes/catppuccin-mocha/rofi/colors.rasi
