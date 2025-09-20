@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ "$(whoami)" = "root" ]; then
   echo "Do not run as root"
@@ -6,7 +6,7 @@ if [ "$(whoami)" = "root" ]; then
 fi
 
 if ! which pacman >/dev/null; then
-  echo "Your not on an Arch or an Arch based distro, you can not use these dotfiles."
+  echo "Your not on an Arch or an Arch based distro, you can not use this install script."
   exit 1
 fi
 

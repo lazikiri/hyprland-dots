@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-swww-daemon && swww img ~/.config/swww/wallpaper.png
+swww-daemon && sleep 0.1
+swww img ~/.config/swww/wallpaper.png
