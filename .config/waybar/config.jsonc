@@ -18,7 +18,7 @@
   "modules-right": [
     "pulseaudio",
     "battery",
-    "clock",
+    "clock"
   ],
 
   // -----MODULES-----
@@ -28,11 +28,11 @@
     "format": "{ifname}",
     "format-wifi": "󰖩",
     "format-disconnected": "󱚵",
-    "on-click": "alacritty -e nmtui",
+    "on-click": "alacritty -e nmtui"
   },
 
   "tray": {
-    "icon-size": 20,
+    "icon-size": 20
   },
 
   "hyprland/workspaces": {
@@ -41,16 +41,16 @@
     "format": "{icon}",
     "format-icons": {
       "default": "",
-      "active": "",
+      "active": ""
     },
     "persistent-workspaces": {
-      "*": 5,
-    },
+      "*": 5
+    }
   },
 
   "pulseaudio": {
     "on-click": "kitty wiremix",
-    "format": " {volume}",
+    "format": " {volume}"
   },
 
   "battery": {
@@ -62,14 +62,14 @@
       "good": 100,
       "warning": 50,
       "bad": 25,
-      "critical": 5,
+      "critical": 5
     },
 
     "tooltip-format": "{timeTo}",
     "format-good": " {capacity}%",
     "format-warning": " {capacity}%",
     "format-bad": " {capacity}%",
-    "format-critical": " {capacity}%",
+    "format-critical": " {capacity}%"
   },
 
   "clock": {
@@ -87,13 +87,13 @@
         "days": "<span color='#e3d5ca'><b>{}</b></span>",
         "weeks": "<span color='#cb997e'><b>W{}</b></span>",
         "weekdays": "<span color='#cb997e'><b>{}</b></span>",
-        "today": "<span color='#3683e1'><b><u>{}</u></b></span>",
+        "today": "<span color='#3683e1'><b><u>{}</u></b></span>"
       },
       "actions": {
         "on-click-right": "mode",
         "on-scroll-up": "shift_up",
-        "on-scroll-down": "shift_down",
-      },
-    },
-  },
+        "on-scroll-down": "shift_down"
+      }
+    }
+  }
 }
