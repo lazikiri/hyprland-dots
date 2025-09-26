@@ -3,7 +3,7 @@
 
   "position": "top",
   "height": 34,
-  "margin": "0 0 5 0",
+  "margin": "5 5 5 5",
   "reload_style_on_change": true,
 
   // -----LAYOUT-----
