@@ -1,0 +1,8 @@
+./modules/services/Time.qml
+./modules/widgets/ClockWidget.qml
+./modules/widgets/Workspaces.qml
+./modules/widgets/Battery.qml
+./modules/config/Colors.qml
+./modules/config/AppearanceConfig.qml
+./modules/Bar.qml
+./shell.qml

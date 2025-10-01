@@ -18,9 +18,9 @@ Row {
 
                 font.family: AppearanceConfig.fontFamily
                 font.pixelSize: AppearanceConfig.fontSize
+                color: modelData === Hyprland.focusedWorkspace ? Colors.color1 : Colors.foreground
 
                 text: modelData.id
-                color: modelData === Hyprland.focusedWorkspace ? Colors.color1 : Colors.foreground
             }
 
             MouseArea {
