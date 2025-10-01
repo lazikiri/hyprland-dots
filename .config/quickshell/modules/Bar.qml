@@ -1,3 +1,4 @@
+import "config"
 import "widgets"
 
 import Quickshell
@@ -22,7 +23,7 @@ Scope {
                     right: true
                 }
 
-                implicitHeight: 34
+                implicitHeight: AppearanceConfig.barHeight
 
                 ClockWidget {
                     anchors.centerIn: parent
