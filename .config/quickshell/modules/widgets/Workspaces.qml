@@ -22,6 +22,13 @@ Row {
                 text: modelData.id
                 color: modelData === Hyprland.focusedWorkspace ? Colors.color1 : Colors.foreground
             }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    Hyprland.dispatch(`workspace ${modelData.id}`);
+                }
+            }
         }
     }
 }
