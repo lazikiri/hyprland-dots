@@ -1,7 +1,7 @@
 * {
     text: #e0def4;
-    background: #191724;
-    border: #1f1d2e;
-    element: #31748f;
+    background: #1f1d2e;
+    border: #191724;
+    element: #26233a;
     element-selected: #c4a7e7;
 }
