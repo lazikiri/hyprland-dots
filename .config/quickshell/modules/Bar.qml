@@ -25,8 +25,19 @@ Scope {
 
                 implicitHeight: AppearanceConfig.barHeight
 
-                ClockWidget {
+                Row {
+                    anchors.verticalCenter: parent.verticalCenter
                     anchors.centerIn: parent
+
+                    Workspaces {}
+                }
+
+                Row {
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.right: parent.right
+                    spacing: AppearanceConfig.barSpacing
+
+                    ClockWidget {}
                 }
             }
         }
