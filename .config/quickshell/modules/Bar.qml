@@ -25,6 +25,8 @@ Scope {
 
                 implicitHeight: AppearanceConfig.barHeight
 
+                color: Colors.background
+
                 Row {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.centerIn: parent
@@ -37,7 +39,11 @@ Scope {
                     anchors.right: parent.right
                     spacing: AppearanceConfig.barSpacing
 
-                    ClockWidget {}
+                    ClockWidget {
+                        font.family: AppearanceConfig.fontFamily
+                        font.pixelSize: AppearanceConfig.fontSize
+                        color: Colors.color2
+                    }
                 }
             }
         }
