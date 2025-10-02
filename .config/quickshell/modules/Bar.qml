@@ -39,7 +39,7 @@ Scope {
                     anchors.right: parent.right
                     spacing: AppearanceConfig.barSpacing
 
-                    Battery {}
+                    BatteryWidget {}
 
                     ClockWidget {
                         font.family: AppearanceConfig.fontFamily
