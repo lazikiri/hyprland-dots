@@ -1,5 +1,5 @@
-import "config"
-import "widgets"
+import "../config"
+import "../widgets"
 
 import QtQuick
 import Quickshell
@@ -27,17 +27,23 @@ Scope {
 
                 color: Colors.background
 
+                // Middle
                 Row {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.centerIn: parent
 
-                    Workspaces {}
+                    WorkspaceWidget {}
                 }
 
+                // Left
                 Row {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.right: parent.right
+                    // anchors.rightMargin: 20
+                    anchors.rightMargin: AppearanceConfig.barMargin
                     spacing: AppearanceConfig.barSpacing
+
+                    AudioWidget {}
 
                     BatteryWidget {}
 
