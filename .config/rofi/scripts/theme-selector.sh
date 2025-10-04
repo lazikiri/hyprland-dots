@@ -15,9 +15,7 @@ ln -sfn "$THEME_DIR/$SELECTED_THEME/rofi/colors.rasi" "$HOME/.config/rofi/colors
 
 ln -sfn "$THEME_DIR/$SELECTED_THEME/kitty/colors.conf" "$HOME/.config/kitty/colors.conf"
 
-ln -sfn "$THEME_DIR/$SELECTED_THEME/waybar/colors.css" "$HOME/.config/waybar/colors.css"
-killall waybar
-nohup waybar > /dev/null &
+ln -sfn "$THEME_DIR/$SELECTED_THEME/quickshell/Colors.qml" "$HOME/.config/quickshell/Colors.qml"
 
 if ! pgrep -x "swww-daemon" > /dev/null; then
     nohup swww-daemon > /dev/null &
