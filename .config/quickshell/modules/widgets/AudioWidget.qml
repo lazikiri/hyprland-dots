@@ -11,4 +11,12 @@ Text {
     color: Colors.color4
 
     text: " " + Audio.volumeLevel
+
+    MouseArea {
+        anchors.fill: parent
+
+        onClicked: {
+            Quickshell.execDetached(["kitty", "--", "wiremix"]);
+        }
+    }
 }
