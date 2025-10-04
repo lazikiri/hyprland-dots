@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-killall waybar
-waybar &
+killall quickshell
+quickshell & disown
 hyprctl reload
