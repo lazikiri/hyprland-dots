@@ -10,8 +10,8 @@ Repeater {
     model: SystemTray.items
 
     Rectangle {
-        height: AppearanceConfig.barHeight
-        width: 32
+        height: parent ? parent.height: AppearanceConfig.barHeight
+        width: AppearanceConfig.barSpacing
         color: Colors.background
 
         IconImage {

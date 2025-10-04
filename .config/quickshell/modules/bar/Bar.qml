@@ -36,6 +36,8 @@ Scope {
                     NetworkWidget {}
 
                     SysTrayWidget {}
+
+                    WindowWidget {}
                 }
 
                 // Middle
