@@ -1,1 +1,0 @@
-barHeight: 34
