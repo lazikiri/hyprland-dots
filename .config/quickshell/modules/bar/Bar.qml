@@ -18,8 +18,8 @@ Scope {
 
                 anchors {
                     top: true
-                    left: true
                     right: true
+                    left: true
                 }
 
                 implicitHeight: AppearanceConfig.barHeight
@@ -57,11 +57,7 @@ Scope {
 
                     BatteryWidget {}
 
-                    ClockWidget {
-                        font.family: AppearanceConfig.fontFamily
-                        font.pixelSize: AppearanceConfig.fontSize
-                        color: Colors.color2
-                    }
+                    ClockWidget {}
                 }
             }
         }

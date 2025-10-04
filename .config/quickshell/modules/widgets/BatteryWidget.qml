@@ -20,7 +20,7 @@ Text {
         stdout: StdioCollector {
             onStreamFinished: {
                 let percentage = parseInt(this.text.trim());
-                battery.text = "󱊣 " + percentage + "%";
+                battery.text = "󰁹 " + percentage + "%";
             }
         }
     }
