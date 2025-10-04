@@ -3,7 +3,6 @@ import "../widgets"
 
 import QtQuick
 import Quickshell
-import Quickshell.Io
 
 Scope {
     id: root
@@ -26,6 +25,13 @@ Scope {
                 implicitHeight: AppearanceConfig.barHeight
 
                 color: Colors.background
+
+                Row {
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.left
+
+                    SysTrayWidget {}
+                }
 
                 // Middle
                 Row {
