@@ -11,8 +11,8 @@ Row {
         model: SystemTray.items
 
         Rectangle {
-            width: AppearanceConfig.workspaceWidth
             height: AppearanceConfig.barHeight
+            width: 32
             color: Colors.background
 
             IconImage {

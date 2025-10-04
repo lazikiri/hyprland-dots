@@ -26,9 +26,14 @@ Scope {
 
                 color: Colors.background
 
+                // Left
                 Row {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: parent.left
+                    anchors.leftMargin: AppearanceConfig.barMargin
+                    spacing: AppearanceConfig.barSpacing
+
+                    NetworkWidget {}
 
                     SysTrayWidget {}
                 }
@@ -45,7 +50,6 @@ Scope {
                 Row {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.right: parent.right
-                    // anchors.rightMargin: 20
                     anchors.rightMargin: AppearanceConfig.barMargin
                     spacing: AppearanceConfig.barSpacing
 
