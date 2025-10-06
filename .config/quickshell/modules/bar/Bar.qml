@@ -37,7 +37,7 @@ Scope {
 
                     SysTrayWidget {}
 
-                    WindowWidget {}
+                    WindowNameWidget {}
                 }
 
                 // Middle
