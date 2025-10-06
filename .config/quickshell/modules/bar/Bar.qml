@@ -1,5 +1,4 @@
 import "../config"
-import "../widgets"
 
 import QtQuick
 import Quickshell
@@ -33,11 +32,9 @@ Scope {
                     anchors.leftMargin: AppearanceConfig.barMargin
                     spacing: AppearanceConfig.barSpacing
 
-                    NetworkWidget {}
+                    Network {}
 
-                    SysTrayWidget {}
-
-                    WindowNameWidget {}
+                    SysTray {}
                 }
 
                 // Middle
@@ -45,7 +42,7 @@ Scope {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.centerIn: parent
 
-                    WorkspaceWidget {}
+                    Workspace {}
                 }
 
                 // Left
@@ -55,11 +52,11 @@ Scope {
                     anchors.rightMargin: AppearanceConfig.barMargin
                     spacing: AppearanceConfig.barSpacing
 
-                    AudioWidget {}
+                    Audio {}
 
-                    BatteryWidget {}
+                    Battery {}
 
-                    ClockWidget {}
+                    Clock {}
                 }
             }
         }
