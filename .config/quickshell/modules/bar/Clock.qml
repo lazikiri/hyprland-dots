@@ -6,7 +6,7 @@ import QtQuick
 Text {
     font.family: AppearanceConfig.fontFamily
     font.pixelSize: AppearanceConfig.fontSize
-    color: Colors.color2
+    color: Colors.on_surface
 
     text: Time.time
 }

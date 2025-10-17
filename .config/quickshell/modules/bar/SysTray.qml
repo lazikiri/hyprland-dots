@@ -15,7 +15,7 @@ Repeater {
 
         Rectangle {
             anchors.fill: parent
-            color: Colors.background
+            color: Colors.surface
 
             IconImage {
                 id: icon

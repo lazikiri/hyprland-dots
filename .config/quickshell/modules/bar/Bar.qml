@@ -23,7 +23,7 @@ Scope {
 
                 implicitHeight: AppearanceConfig.barHeight
 
-                color: Colors.background
+                color: Colors.surface
 
                 // Left
                 Row {

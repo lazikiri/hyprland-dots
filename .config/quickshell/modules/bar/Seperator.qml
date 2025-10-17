@@ -6,7 +6,7 @@ import Quickshell
 Text {
     font.family: AppearanceConfig.fontFamily
     font.pixelSize: AppearanceConfig.fontSize
-    color: Colors.fontColor
+    color: Colors.on_surface
 
     text: "|"
 }

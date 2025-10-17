@@ -6,7 +6,7 @@ import Quickshell
 Text {
     font.family: AppearanceConfig.fontFamily
     font.pixelSize: AppearanceConfig.fontSize
-    color: Colors.color5
+    color: Colors.on_surface
 
     text: ""
 

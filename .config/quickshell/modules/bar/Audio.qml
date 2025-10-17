@@ -8,7 +8,7 @@ import Quickshell.Services.Pipewire
 Text {
     font.family: AppearanceConfig.fontFamily
     font.pixelSize: AppearanceConfig.fontSize
-    color: Colors.color4
+    color: Colors.on_surface
 
     text: " " + Audio.volumeLevel
 

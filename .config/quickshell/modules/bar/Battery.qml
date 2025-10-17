@@ -9,7 +9,7 @@ Text {
 
     font.family: AppearanceConfig.fontFamily
     font.pixelSize: AppearanceConfig.fontSize
-    color: Colors.color3
+    color: Colors.on_surface
 
     Process {
         id: capacityProc
