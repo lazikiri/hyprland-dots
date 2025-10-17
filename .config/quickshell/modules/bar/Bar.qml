@@ -34,7 +34,11 @@ Scope {
 
                     Network {}
 
+                    Seperator {}
+
                     SysTray {}
+                    
+                    Seperator {}
                 }
 
                 // Middle
@@ -43,6 +47,8 @@ Scope {
                     anchors.centerIn: parent
 
                     Workspace {}
+
+                    // PowerProfile {}
                 }
 
                 // Left
@@ -52,11 +58,20 @@ Scope {
                     anchors.rightMargin: AppearanceConfig.barMargin
                     spacing: AppearanceConfig.barSpacing
 
+
+                    Seperator {}
+
                     Audio {}
 
+                    Seperator {}
+
                     Battery {}
+                    
+                    Seperator {}
 
                     Clock {}
+                    
+                    Seperator {}
                 }
             }
         }
