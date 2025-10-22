@@ -27,6 +27,6 @@ if ! which paru >/dev/null; then
   makepkg -si
 fi
 
-paru -S --needed --noconfirm hyprland quickshell-git ttf-firacode-nerd pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent rofi swww xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xwaylandvideobridge hyprshot cliphist wl-clipboard wiremix yazi hyprlock
+paru -S --needed --noconfirm hyprland quickshell-git ttf-firacode-nerd pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent rofi swww xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xwaylandvideobridge hyprshot cliphist wl-clipboard wiremix yazi hyprlock adw-gtk-theme
 
 echo "Please reboot your system."
