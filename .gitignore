@@ -1,7 +1,9 @@
-.config/gtk-3.0/settings.ini
 .config/gtk-3.0/colors.css
-.config/gtk-4.0/settings.ini
+.config/gtk-3.0/settings.ini
 .config/gtk-4.0/colors.css
+.config/gtk-4.0/settings.ini
 .config/hypr/colors.conf
 .config/kitty/colors.conf
+.config/quickshell/modules/config/Colors.qml
+.config/quickshell/tmp
 .config/rofi/colors.rasi
