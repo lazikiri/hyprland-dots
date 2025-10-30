@@ -20,13 +20,13 @@ fi
 
 git clone https://github.com/lazikiri/hyprland-dots "$HOME/.config/"
 
-if ! which paru >/dev/null; then
-  rm -rf /tmp/paru
-  git clone https://aur.archlinux.org/paru.git /tmp/paru
-  cd /tmp/paru
+if ! which yay >/dev/null; then
+  rm -rf /tmp/yay
+  git clone https://aur.archlinux.org/yay.git /tmp/yay
+  cd /tmp/yay
   makepkg -si
 fi
 
-paru -S --needed --noconfirm hyprland quickshell-git ttf-firacode-nerd pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent rofi swww xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xwaylandvideobridge hyprshot cliphist wl-clipboard wiremix yazi gtklock adw-gtk-theme
+yay -S --needed --noconfirm hyprland quickshell-git ttf-firacode-nerd pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber dunst hyprpolkitagent rofi swww xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xwaylandvideobridge hyprshot cliphist wl-clipboard wiremix yazi gtklock adw-gtk-theme
 
 echo "Please reboot your system."
