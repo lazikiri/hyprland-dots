@@ -12,6 +12,10 @@ Singleton {
     property string fontFamily: "Firacode Nerd Font Propo"
     property int fontSize: 15
 
+    property int widgetMargin: 35
+    property int widgetHeightSubtraction: 6
+    property int widgetRounding: 10
+
     property int workspaceWidth: 38
 
     property int sysTrayHeight: root.barHeight

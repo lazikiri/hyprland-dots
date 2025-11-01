@@ -26,49 +26,89 @@ Scope {
                 color: Colors.surface
 
                 // Left
-                Row {
+                Rectangle {
                     anchors {
                         verticalCenter: parent.verticalCenter
                         left: parent.left
                         leftMargin: AppearanceConfig.barMargin
                     }
 
-                    spacing: AppearanceConfig.barSpacing
+                    height: AppearanceConfig.barHeight - AppearanceConfig.widgetHeightSubtraction
+                    width: leftRow.width + AppearanceConfig.widgetMargin
+                    radius: AppearanceConfig.widgetRounding
 
-                    Network {}
-                    Seperator {}
-                    SysTray {}
-                    Seperator {}
+                    color: Colors.surfaceContainer
+
+                    Row {
+                        id: leftRow
+
+                        anchors.centerIn: parent
+
+                        spacing: AppearanceConfig.barSpacing
+
+                        Network {}
+                        Seperator {}
+                        SysTray {}
+                        Seperator {}
+                    }
                 }
 
                 // Middle
-                Row {
+                Rectangle {
+                    id: middleRectangle
+
                     anchors {
                         verticalCenter: parent.verticalCenter
                         horizontalCenter: parent.horizontalCenter
                     }
 
-                    Workspace {}
-                    // PowerProfile {}
+                    height: AppearanceConfig.barHeight - AppearanceConfig.widgetHeightSubtraction
+                    width: middleRow.width + AppearanceConfig.widgetMargin
+                    radius: AppearanceConfig.widgetRounding
+
+                    color: Colors.surfaceContainer
+
+                    Row {
+                        id: middleRow
+
+                        anchors.centerIn: parent
+
+                        Workspace {
+                            backgroundColor: middleRectangle.color
+                        }
+                        // PowerProfile {}
+                    }
                 }
 
                 // Right
-                Row {
+                Rectangle {
                     anchors {
                         verticalCenter: parent.verticalCenter
                         right: parent.right
                         rightMargin: AppearanceConfig.barMargin
                     }
 
-                    spacing: AppearanceConfig.barSpacing
+                    height: AppearanceConfig.barHeight - AppearanceConfig.widgetHeightSubtraction
+                    width: rightRow.width + AppearanceConfig.widgetMargin
+                    radius: AppearanceConfig.widgetRounding
 
-                    Seperator {}
-                    Audio {}
-                    Seperator {}
-                    Battery {}
-                    Seperator {}
-                    Clock {}
-                    Seperator {}
+                    color: Colors.surfaceContainer
+
+                    Row {
+                        id: rightRow
+
+                        anchors.centerIn: parent
+
+                        spacing: AppearanceConfig.barSpacing
+
+                        Seperator {}
+                        Audio {}
+                        Seperator {}
+                        Battery {}
+                        Seperator {}
+                        Clock {}
+                        Seperator {}
+                    }
                 }
             }
         }

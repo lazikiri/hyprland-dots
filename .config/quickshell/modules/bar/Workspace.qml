@@ -5,12 +5,14 @@ import Quickshell
 import Quickshell.Hyprland
 
 Repeater {
+    property color backgroundColor: Colors.surfaceContainer
+
     model: Hyprland.workspaces
 
     Rectangle {
         width: AppearanceConfig.workspaceWidth
-        height: AppearanceConfig.barHeight
-        color: Colors.surface
+        height: AppearanceConfig.barHeight - AppearanceConfig.widgetHeightSubtraction
+        color: backgroundColor
 
         Text {
             anchors.centerIn: parent
