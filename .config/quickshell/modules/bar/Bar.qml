@@ -27,50 +27,47 @@ Scope {
 
                 // Left
                 Row {
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.left: parent.left
-                    anchors.leftMargin: AppearanceConfig.barMargin
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        left: parent.left
+                        leftMargin: AppearanceConfig.barMargin
+                    }
+
                     spacing: AppearanceConfig.barSpacing
 
                     Network {}
-
                     Seperator {}
-
                     SysTray {}
-                    
                     Seperator {}
                 }
 
                 // Middle
                 Row {
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.centerIn: parent
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        horizontalCenter: parent.horizontalCenter
+                    }
 
                     Workspace {}
-
                     // PowerProfile {}
                 }
 
                 // Left
                 Row {
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.right: parent.right
-                    anchors.rightMargin: AppearanceConfig.barMargin
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        right: parent.right
+                        rightMargin: AppearanceConfig.barMargin
+                    }
+
                     spacing: AppearanceConfig.barSpacing
 
-
                     Seperator {}
-
                     Audio {}
-
                     Seperator {}
-
                     Battery {}
-                    
                     Seperator {}
-
                     Clock {}
-                    
                     Seperator {}
                 }
             }
