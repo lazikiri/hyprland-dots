@@ -52,7 +52,7 @@ Scope {
                     // PowerProfile {}
                 }
 
-                // Left
+                // Right
                 Row {
                     anchors {
                         verticalCenter: parent.verticalCenter
