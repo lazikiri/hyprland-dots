@@ -46,6 +46,7 @@ Scope {
 
                         spacing: AppearanceConfig.barSpacing
 
+                        Seperator {}
                         Network {}
                         Seperator {}
                         SysTray {}
