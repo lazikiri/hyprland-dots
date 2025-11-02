@@ -13,8 +13,8 @@ Singleton {
     property int fontSize: 15
 
     property int widgetMargin: 35
-    property int widgetHeightSubtraction: 6
-    property int widgetRounding: 10
+    property int widgetHeightSubtraction: 7
+    property int widgetRounding: 14
 
     property int workspaceWidth: 38
 
