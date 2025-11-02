@@ -10,16 +10,24 @@ Repeater {
     model: Hyprland.workspaces
 
     Rectangle {
-        width: AppearanceConfig.workspaceWidth
+        width: modelData.focused ? AppearanceConfig.workspaceWidth + 50 : AppearanceConfig.workspaceWidth
         height: AppearanceConfig.barHeight - AppearanceConfig.widgetHeightSubtraction
-        color: backgroundColor
+        color: modelData.focused ? Colors.primary : backgroundColor
+        radius: AppearanceConfig.widgetRounding
+
+        Behavior on width {
+            NumberAnimation {
+                duration: 200
+                easing.type: Easing.OutSine
+            }
+        }
 
         Text {
             anchors.centerIn: parent
 
             font.family: AppearanceConfig.fontFamily
             font.pixelSize: AppearanceConfig.fontSize
-            color: modelData === Hyprland.focusedWorkspace ? Colors.primary : Colors.on_surface
+            color: modelData.focused ? Colors.on_primary : Colors.on_surface
 
             text: modelData.id
         }
