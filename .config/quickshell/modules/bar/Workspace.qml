@@ -10,7 +10,7 @@ Repeater {
     model: Hyprland.workspaces
 
     Rectangle {
-        width: modelData.focused ? AppearanceConfig.workspaceWidth + 50 : AppearanceConfig.workspaceWidth
+        width: modelData.focused ? AppearanceConfig.workspaceWidth + 70 : AppearanceConfig.workspaceWidth
         height: AppearanceConfig.barHeight - AppearanceConfig.widgetHeightSubtraction
         color: modelData.focused ? Colors.primary : backgroundColor
         radius: AppearanceConfig.widgetRounding
